@@ -1,0 +1,668 @@
+*{
+    padding: 0;
+    margin: 0;
+    line-height: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+nav{
+    width: 100%;
+    height: 60px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    align-items: center;
+    gap: 10px; 
+    box-shadow: 1px 1px 10px rgb(218, 213, 213);
+}
+nav img{
+    width: 100px;
+    height: 50px;
+    margin-left: 100px;
+    border-radius: 50%;
+    border: 1px solid rgb(109, 121, 248);
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(109, 121, 248);
+    transition: all 0,6s;
+}
+nav ul li a:hover{
+    color: #3f3e27;
+    transform: translateY(-4px);
+}
+nav .form{
+    position: relative;
+    top: 10px;
+}
+nav .form input{
+    border: 2px solid  rgb(109, 121, 248);
+}
+nav .form button{
+    background-color: white;
+    color: rgb(109, 121, 248);
+    width: 80px;
+    border: 2px solid  rgb(109, 121, 248);
+    cursor: pointer;
+    border-radius: 20px;
+}
+nav .icon{
+    float: right;
+    position: relative;
+    bottom: 20px;
+}
+nav .icon i{
+    font-size: 20px;
+    color: rgb(109, 121, 248);
+}
+header{
+    background-image: linear-gradient(rgb(0, 0, 0, 0.5) 70%, rgb(0, 0, 0, 0.5) 30%), url(../images/header1.jpeg);
+    background-size: cover;
+    background-position:center;
+    width: 100%;
+    height: 600px;
+}
+header h1{
+    padding-top: 100px;
+    padding-left:400px;
+    font-size: 50px;
+    color: white;
+}
+header p{
+    margin-top: 30px;
+    color: white;
+    margin-left: 300px;
+}
+header button{
+    margin-top: 35px;
+    margin-left: 665px;
+    width: 150px;
+    height: 45px;
+    cursor: pointer;
+    transition: all 0.6s;
+}
+header button:hover{
+    background-color: rgb(189, 189, 223);
+    color: white;
+}
+.clothes h1{
+     position: relative;
+     margin-left: 660px;
+     top: 20px;
+     font-size: 40px;
+}
+section .cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 180px;
+    position: relative;
+    top: 30px;
+}
+section .card{
+    margin-bottom: 70px;
+    border: 2px solid rgb(179, 179, 247);
+    border-radius: 20px;
+    width: 400px;
+    height: 350px;
+    display: inline-block;
+}
+section .card img{
+    width: 350px;
+    height: 250px;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: all 0.6s;
+}
+section .card img:hover{
+    transform: scale(0.9);
+}
+section .card h2{
+    text-align: center;
+}
+section .card p{
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+}
+section .card button{
+    margin-left: 140px;
+    margin-top: 10px;
+    width: 100px;
+    background-color: white;
+    color: rgb(109, 109, 201);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.6s;
+}
+section .card button:hover{
+    background-color: rgb(109, 109, 201) ;
+    color: white;
+    transform: scale(1.2);
+}
+section .loading{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loading .load{
+    width: 300px;
+    height: 300px;
+    margin-left: 300px;
+    position: relative;
+    top: 30px;
+    background-color: rgb(240, 234, 228);
+    border-style: solid;
+    border-width: 5px;
+    border-bottom-color: rgb(88, 88, 148);
+    border-top-color:rgb(88, 88, 148) ;
+    border-left-color: rgb(88, 88, 148);
+    border-right-color: white;
+    border-radius: 50%;
+    animation: load 3s  linear infinite;
+}
+@keyframes load{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.loading .load-text{
+    text-align: center;
+    position: absolute;
+}
+.loading .load-text h1{
+    position: relative;
+    left: 370px;
+    bottom: 140px;
+    color: rgb(88, 88, 148);
+    font-size: 40px;
+}
+.loading .text h1{
+     margin-left: 700px;
+     position: relative;
+     bottom: 250px;
+     font-size: 30px;
+}
+.loading .text button{
+    margin-left: 900px;
+    position: relative;
+    bottom: 170px;
+    font-size: 25px;
+    height: 40PX;
+    width: 200PX;
+    background-color: white;
+    color: rgb(88, 88, 148);
+    cursor: pointer;
+    transition: all 0.6s;
+}
+.loading .text button:hover{
+    color: white;
+    background-color: rgb(175, 175, 201);
+    transform: scale(0.9);
+}
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: rgb(210, 210, 238);
+}
+footer .company{
+    padding-top: 30px;
+    padding-left: 40px;
+}
+footer .company h5{
+    font-size: 17px;
+    padding-bottom: 10px;
+}
+footer .company p{
+    font-size: 15px;
+}
+footer .icons{
+    float: right;
+    position: relative;
+    bottom: 120px;
+}
+footer .icons h5{
+    font-size: 20px;
+}
+footer .icons i{
+    position: relative;
+    top: 20px;
+    font-size: 20px;
+}
+
+/* SHOP */
+
+
+.sec1 h1{
+    position: relative;
+    text-align: center;
+    top: 20px;
+}
+.sec1 .cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 180px;
+    position: relative;
+    top: 30px;
+}
+.sec1 .cards h2{
+    display: inline;
+    position: relative;
+    left: 150px;
+}
+.sec1 .cards i{
+    display: inline;
+    position: relative;
+    left: 160px;
+    font-size: 20px;
+    color: red;
+}
+a{
+    text-decoration: none;
+}
+.sec2 h1{
+    position: relative;
+    text-align: center;
+    top: 20px;
+}
+.sec2 .cards h2{
+    display: inline;
+    position: relative;
+    left: 150px;
+}
+.sec2 .cards i{
+    position: relative;
+    top: 60px;
+    left: 60px;
+    color: yellow;
+}
+
+/* mediquery */
+
+@media ((min-width:1300px) and (max-width:1400px)) {
+    .clothes h1{
+        position: relative;
+        margin-left: 560px;
+        top: 20px;
+        font-size: 40px;
+   }
+    section .cards{
+        grid-template-columns: repeat(2,1fr);
+        row-gap: 100px;
+        column-gap: 500px;
+        top: 50px;
+    }
+    .loading .text h1{
+        margin-left: 600px;
+   }
+   .loading .text button{
+    margin-left: 800px;
+   }
+   header h1{
+    padding-left:300px;
+   }
+    header p{
+    margin-left: 200px;
+    }
+    header button{
+    margin-left: 565px;
+    } 
+}
+@media ((min-width:1200px) and (max-width:1299px)) {
+    .clothes h1{
+        margin-left: 480px;
+   }
+    section .cards{
+        grid-template-columns: repeat(2,1fr);
+        row-gap: 100px;
+        column-gap: 390px;
+        top: 50px;
+    }
+    .loading .text h1{
+        margin-left: 600px;
+        font-size: 27px;
+   }
+   .loading .text button{
+        margin-left: 800px;
+   }
+   header h1{
+        padding-left:250px;
+   }
+    header p{
+         margin-left: 180px;
+    }
+    header button{
+        margin-left: 545px;
+    } 
+}
+@media ((min-width:1000px) and (max-width:1199px)) {
+    .clothes h1{
+        margin-left: 400px;
+   }
+    section .cards{
+        grid-template-columns: repeat(2,1fr);
+        row-gap: 100px;
+        column-gap: 200px;
+        top: 50px;
+    }
+    .loading .text h1{
+        margin-left: 500px;
+        font-size: 25px;
+   }
+   .loading .text button{
+        margin-left: 700px;
+   }
+   header h1{
+        padding-left:150px;
+   }
+    header p{
+         margin-left: 80px;
+    }
+    header button{
+        margin-left: 445px;
+    } 
+    .loading .load{
+        margin-left: 180px;
+    }
+    .loading .load-text h1{
+        left: 250px;
+    }
+}
+@media ((min-width:900px) and (max-width:999px)) {
+    nav .form{
+        right: 30px;
+    }
+    .clothes h1{
+        margin-left: 400px;
+   }
+    section .cards{
+        grid-template-columns: repeat(2,1fr);
+        row-gap: 80px;
+        column-gap: 90px;
+        top: 50px;
+    }
+    .loading .text h1{
+        margin-left: 430px;
+        font-size: 25px;
+   }
+   .loading .text button{
+        margin-left: 600px;
+   }
+   header h1{
+        padding-left:70px;
+   }
+    header p{
+         margin-left: 30px;
+         font-size:15px;
+    }
+    header button{
+        margin-left: 355px;
+    } 
+    .loading .load{
+        margin-left: 150px;
+    }
+    .loading .load-text h1{
+        left: 220px;
+    }
+}
+@media ((min-width:800px) and (max-width:899px)) {
+    nav img{
+        margin-left: 50px;
+    }
+    nav .form{
+        right: 40px;
+    }
+    nav .icon{
+        left: 30px;
+    }
+    nav .icon i{
+        font-size: 17px;
+    }
+    .clothes h1{
+        margin-left: 350px;
+   }
+    section .cards{
+        grid-template-columns: repeat(2,1fr);
+        row-gap: 80px;
+        column-gap: 10px;
+        top: 50px;
+    }
+    .loading .text h1{
+        margin-left: 360px;
+        font-size: 23px;
+   }
+   .loading .text button{
+        margin-left: 500px;
+   }
+   header h1{
+        padding-left:55px;
+        font-size: 45px;
+   }
+    header p{
+         margin-left: 35px;
+         font-size:13px;
+    }
+    header button{
+        margin-left: 300px;
+    } 
+    .loading .load{
+        margin-left: 80px;
+    }
+    .loading .load-text h1{
+        left: 160px;
+    }
+}
+@media ((min-width:700px) and (max-width:799px)) {
+    nav{
+        height: 100px;
+    }
+    nav ul{
+        flex-direction: column;
+    }
+    nav ul li a{
+        display: block;
+    }
+    nav img{
+        margin-left:-60px;
+    }
+    nav .form{
+        right: 80px;
+    }
+    nav .icon{
+        left: 60px;
+    }
+    nav .icon i{
+        font-size: 17px;
+    }
+    .clothes h1{
+        margin-left: 250px;
+   }
+    section .cards{
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+        top: 50px;
+    }
+    .loading .text h1{
+        margin-left: 290px;
+        font-size: 21px;
+   }
+   .loading .text button{
+        margin-left: 400px;
+   }
+   header h1{
+        padding-left:55px;
+        font-size: 40px;
+   }
+    header p{
+         margin-left: 35px;
+         font-size:11px;
+    }
+    header button{
+        margin-left: 270px;
+    } 
+    .loading .load{
+        margin-left: 10px;
+    }
+    .loading .load-text h1{
+        left: 90px;
+    }
+}
+@media ((min-width:500px) and (max-width:699px)) {
+    nav{
+        height: 150px;
+    }
+    nav ul{
+        flex-direction: column;
+    }
+    nav ul li a{
+        display: block;
+    }
+    nav img{
+        margin-left:100px;
+    }
+    nav .form{
+        margin-bottom: 30px;
+    }
+    nav .icon{
+        left: 200px;
+    }
+    nav .icon i{
+        font-size: 20px;
+    }
+    .clothes h1{
+        margin-left: 150px;
+   }
+    section .cards{
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+        top: 50px;
+    }
+    .loading .text h1{
+        margin-left: 290px;
+        font-size: 18px;
+   }
+   .loading .text button{
+        margin-left: 320px;
+        width: 150px;
+        font-size: 15px;
+   }
+   header h1{
+        padding-left:55px;
+        font-size: 30px;
+   }
+    header p{
+         margin-left: 30px;
+         font-size:11px;
+    }
+    header button{
+        margin-left: 200px;
+    } 
+    .loading .load{
+        margin-left: 10px;
+    }
+    .loading .load-text h1{
+        left: 90px;
+    }
+}
+@media ((min-width:300px) and (max-width:499px)) {
+    nav{
+        height: 150px;
+    }
+    nav ul{
+        flex-direction: column;
+    }
+    nav ul li a{
+        display: block;
+    }
+    nav img{
+        margin-left:100px;
+    }
+    nav .form{
+        margin-bottom: 30px;
+    }
+    nav .icon{
+        left: 200px;
+    }
+    nav .icon i{
+        font-size: 20px;
+    }
+    .clothes h1{
+        margin-left: 100px;
+   }
+    section .cards{
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+        top: 50px;
+    }
+    .loading .text h1{
+        margin-left: 330px;
+        font-size: 15px;
+        margin-bottom: 20px;
+   }
+   .loading .text button{
+        margin-left: 330px;
+        width: 100px;
+        font-size: 12px;
+   }
+   header h1{
+        padding-left:55px;
+        font-size: 25px;
+   }
+    header p{
+         margin-left: 40px;
+         font-size:11px;
+    }
+    header button{
+        margin-left: 150px;
+    } 
+    .loading .load{
+        margin-left: 10px;
+    }
+    .loading .load-text h1{
+        left: 90px;
+    }
+}
+
+/* shop */
+
+@media ((min-width:1300px) and (max-width:1400px)) {
+    .sec1 .cards{
+        column-gap: 10px;
+    }
+}
+@media ((min-width:1200px) and (max-width:1299px)) {
+    .sec1 .cards{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media ((min-width:1000px) and (max-width:1199px)) {
+    .sec1 .cards{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media ((min-width:900px) and (max-width:999px)) {
+    .sec1 .cards{
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 10px;
+    }
+}
+@media ((min-width:800px) and (max-width:899px)) {
+    .sec1 .cards{
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 10px;
+    }
+}
+@media ((min-width:300px) and (max-width:799px)) {
+    .sec1 .cards{
+        grid-template-columns: repeat(1,1fr);
+    }
+     
+}
+
